@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 20px;
+}
+.sqaure {
+    width: 64px;
+    height: 64px;
+    background: #fff;
+    border: 2px
+    solid #333;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    transition: background 0.3s ease;
+}
+
+.board-row {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.square:hover {
+    background: #ddd;
+}
+
+.restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
