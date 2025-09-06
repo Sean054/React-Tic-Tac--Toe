@@ -54,9 +54,19 @@ function Board() {
         <Square value={squares[7]} onClick={() => onSquareClick(7)} />
         <Square value={squares[8]} onClick={() => onSquareClick(8)} />
       </div>
+      {/* Restart button to reset the game state */}
+      <button
+        onClick={() => {
+          setSquares(Array(9).fill(null));
+          setXIsNext(true);
+        }}
+      >
+        Restart Game
+      </button>
     </>
   );
 }
+
 
 // Game is the main component that renders the Board
 export default function Game() {
