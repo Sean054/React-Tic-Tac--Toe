@@ -1,7 +1,7 @@
 // Required for using React hooks in Next.js app directory files
 "use client";
 import { useState } from "react";
-
+import { Analytics } from "@vercel/analytics/next"
 // Square is a reusable component for each tic-tac-toe cell
 function Square({ value, onClick }) {
   return (
@@ -73,6 +73,8 @@ export default function Game() {
   return (
     <div>
       <Board />
+      {children}
+      <Analytics />
     </div>
   );
 }
